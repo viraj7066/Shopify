@@ -7,5 +7,5 @@ https://viraj7066.github.io/Shopify/
 
 Preview Image👇
 
-![preview 1](https://github.com/viraj7066/Shopify/blob/main/Screenshot%20(130).png)https://github.com/viraj7066/Shopify/blob/main/Screenshot%20(130).png)
+![preview 1](https://github.com/viraj7066/Shopify/blob/main/Screenshot%20(131).png)
 
