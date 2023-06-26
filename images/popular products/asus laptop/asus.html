@@ -1,0 +1,638 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shopify</title>
+
+  <!-- 
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+
+  <!-- 
+    - custom css link
+  -->
+  <link rel="stylesheet" href="../../../assets\css\main.css">
+  <link rel="stylesheet" href="../../../assets\css\product-details.css">
+
+  <!-- 
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&family=Roboto:wght@400;500;700&display=swap"
+    rel="stylesheet">
+</head>
+
+<body id="top">
+
+  <!-- 
+    - #HEADER
+  -->
+
+  <header class="header" data-header>
+
+    <div class="top-bar">
+      <div class="container">
+        <p>Free shipping for all order of &#8377 8,000</p>
+      </div>
+    </div>
+
+    <div class="nav-wrapper">
+      <div class="container">
+
+        <h1 class="h1">
+          <a href="./index.html" class="logo">shopi<span class="span">fy</span></a>
+        </h1>
+
+        <button class="nav-open-btn" aria-label="Open Menu" data-nav-open-btn>
+          <ion-icon name="menu-outline"></ion-icon>
+        </button>
+
+        <nav class="navbar" data-navbar>
+
+          <button class="nav-close-btn" aria-label="Close Menu" data-nav-close-btn>
+            <ion-icon name="close-outline"></ion-icon>
+          </button>
+
+          <ul class="navbar-list">
+
+            <li>
+              <a href="#" class="navbar-link">Home</a>
+            </li>
+
+            <li>
+              <a href="#" class="navbar-link">About</a>
+            </li>
+
+            <li>
+              <a href="#" class="navbar-link">Shop</a>
+            </li>
+
+            <li>
+              <a href="#" class="navbar-link">Blog</a>
+            </li>
+
+            <li>
+              <a href="#" class="navbar-link">Products</a>
+            </li>
+
+            <li>
+              <a href="#" class="navbar-link">Contact</a>
+            </li>
+
+          </ul>
+
+        </nav>
+
+        <div class="header-action">
+
+          <div class="search-wrapper" data-search-wrapper>
+
+            <button class="header-action-btn" aria-label="Toggle search" data-search-btn>
+              <ion-icon name="search-outline" class="search-icon"></ion-icon>
+              <ion-icon name="close-outline" class="close-icon"></ion-icon>
+            </button>
+
+            <div class="input-wrapper">
+              <input type="search" name="search" placeholder="Search here" class="search-input">
+
+              <button class="search-submit" aria-label="Submit search">
+                <ion-icon name="search-outline"></ion-icon>
+              </button>
+            </div>
+
+          </div>
+
+          <button class="header-action-btn" aria-label="Open whishlist" data-panel-btn="whishlist">
+            <ion-icon name="heart-outline"></ion-icon>
+
+            <data class="btn-badge" value="3">03</data>
+          </button>
+
+          <button class="header-action-btn" aria-label="Open shopping cart" data-panel-btn="cart">
+            <ion-icon name="basket-outline"></ion-icon>
+
+            <data class="btn-badge" value="2">02</data>
+          </button>
+
+        </div>
+
+      </div>
+    </div>
+
+  </header>
+
+
+
+
+
+  <!-- 
+    - #ASIDE
+  -->
+
+  <aside class="aside">
+
+    <div class="side-panel" data-side-panel="whishlist">
+
+      <button class="panel-close-btn" aria-label="Close whishlist" data-panel-btn="whishlist">
+        <ion-icon name="close-outline"></ion-icon>
+      </button>
+
+      <ul class="panel-list">
+
+        <li class="panel-item">
+          <a href="#" class="panel-card">
+
+            <figure class="item-banner">
+              <img src="../realme c55/phone 1.png" width="46" height="46" loading="lazy"
+                alt="one">
+            </figure>
+
+            <div>
+              <p class="item-title">Realme C55</p>
+
+              <span class="item-value">&#8377 10,999x1</span>
+            </div>
+
+            <button class="item-close-btn" aria-label="Remove item">
+              <ion-icon name="close-outline"></ion-icon>
+            </button>
+
+          </a>
+        </li>
+
+        <li class="panel-item">
+          <a href="#" class="panel-card">
+
+            <figure class="item-banner">
+              <img src="../samsung/phone 1.png" width="46" height="46" loading="lazy" alt="wvvw">
+            </figure>
+
+            <div>
+              <p class="item-title">Samsung Galaxy S23 </p>
+
+              <span class="item-value">&#8377 1,24,999x2</span>
+            </div>
+
+            <button class="item-close-btn" aria-label="Remove item">
+              <ion-icon name="close-outline"></ion-icon>
+            </button>
+
+          </a>
+        </li>
+
+        <li class="panel-item">
+          <a href="#" class="panel-card">
+
+            <figure class="item-banner">
+              <img src="../acer lcd/lcd 1.png" width="46" height="46" loading="lazy"
+                alt="pne">
+            </figure>
+
+            <div>
+              <p class="item-title">Acer LED Android TV</p>
+
+              <span class="item-value">&#8377 99,999x1</span>
+            </div>
+
+            <button class="item-close-btn" aria-label="Remove item">
+              <ion-icon name="close-outline"></ion-icon>
+            </button>
+
+          </a>
+        </li>
+
+      </ul>
+
+      <div class="subtotal">
+        <p class="subtotal-text">Subtotal:</p>
+
+        <data class="subtotal-value" value="215.14">&#8377 360,996</data>
+      </div>
+
+      <a href="#" class="panel-btn">View Whishlist</a>
+
+    </div>
+
+    <div class="side-panel" data-side-panel="cart">
+
+      <button class="panel-close-btn" aria-label="Close cart" data-panel-btn="cart">
+        <ion-icon name="close-outline"></ion-icon>
+      </button>
+
+      <ul class="panel-list">
+
+        <li class="panel-item">
+          <a href="#" class="panel-card">
+
+            <figure class="item-banner">
+              <img src="../oneplus lcd/lcd 1.png" width="46" height="46" loading="lazy"
+                alt="one">
+            </figure>
+
+            <div>
+              <p class="item-title">Oneplus U15 Android TV</p>
+
+              <span class="item-value">&#8377 42,999x1</span>
+            </div>
+
+            <button class="item-close-btn" aria-label="Remove item">
+              <ion-icon name="close-outline"></ion-icon>
+            </button>
+
+          </a>
+        </li>
+
+        <li class="panel-item">
+          <a href="#" class="panel-card">
+
+            <figure class="item-banner">
+              <img src="../jbl headphone/head 1.png" width="46" height="46" loading="lazy" alt="erev">
+            </figure>
+
+            <div>
+              <p class="item-title">JBL Tune 760NC</p>
+
+              <span class="item-value">&#8377 5,499x2</span>
+            </div>
+
+            <button class="item-close-btn" aria-label="Remove item">
+              <ion-icon name="close-outline"></ion-icon>
+            </button>
+
+          </a>
+        </li>
+
+      </ul>
+
+      <div class="subtotal">
+        <p class="subtotal-text">Subtotal:</p>
+
+        <data class="subtotal-value" value="215.14">&#8377 53,997</data>
+      </div>
+
+      <a href="#" class="panel-btn">View Cart</a>
+
+    </div>
+
+  </aside>
+
+
+
+
+
+  <main>
+    <article>
+
+      <!-- 
+        - #BREADCUMB
+      -->
+
+      <div class="breadcumb-wrapper">
+
+        <h2 class="page-title">Product Details</h2>
+
+        <ol class="breadcumb-list">
+
+          <li class="breadcumb-item">
+            <a href="../../../index.html" class="breadcumb-link">Home</a>
+          </li>
+
+          <li class="breadcumb-item">Product</li>
+
+        </ol>
+
+      </div>
+
+
+
+
+
+      <!-- 
+        - #PRODUCT DETAILS
+      -->
+
+      <section class="section product-details">
+        <div class="container">
+
+          <div class="wrapper">
+
+            <div class="product-details-img">
+
+              <figure class="product-display">
+                <img src="./lap 1.png" width="700" height="700" loading="lazy"
+                  alt="grgerge" class="w-000" data-product-display>
+              </figure>
+
+              <ul class="product-thumbnail-list has-scrollbar">
+
+                <li class="product-thumbnail-item">
+                  <img src="./lap 1.png" width="700" height="700" loading="lazy"
+                    alt="ethheh" class="w-000" data-product-thumbnail>
+                </li>
+
+                <li class="product-thumbnail-item">
+                  <img src="./lap 2.jpg" width="700" height="700" loading="lazy"
+                    alt="ethh" class="w-000" data-product-thumbnail>
+                </li>
+
+                <li class="product-thumbnail-item">
+                  <img src="./lap 3.jpg" width="700" height="700" loading="lazy"
+                    alt="rethe" class="w-000" data-product-thumbnail>
+                </li>
+
+                <li class="product-thumbnail-item">
+                  <img src="./lap 4.jpg" width="700" height="700" loading="lazy"
+                    alt="ehth" class="w-000" data-product-thumbnail>
+                </li>
+
+              </ul>
+
+            </div>
+
+            <div class="product-details-content">
+
+              <h3 class="product-title">ASUS TUF Gaming F15</h3>
+
+              <data class="product-price" value="350.00">&#8377 58,990</data>
+
+              <div class="rating-wrapper">
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star"></ion-icon>
+              </div>
+
+              <p class="product-text">
+                Raise the thrill in every game and add a little style to your gaming setup with the Asus TUF Gaming F15 laptop. It is equipped with a 10th Gen Intel Core H-Series processor and GeForce GTX 1650 GPU so that you can experience fast-paced and smooth gaming. And, with the desktop-style Keyboard setup and integrated backlights, you can indulge in gaming for hours without getting bored.
+
+              </p>
+
+              <br>
+              <br>
+              <br>
+              <br>
+              
+
+              <div class="product-qty">,
+                <input type="number" name="quantity" value="1" min="1" max="50" class="product-qty-input">
+
+                <button class="btn btn-primary product-qty-btn">Add To Cart</button>
+              </div>
+
+            </div>
+
+          </div>
+
+          <h4 class="description-title">Descripton :</h4>
+
+          <p class="description-text">
+            Raise the thrill in every game and add a little style to your gaming setup with the Asus TUF Gaming F15 laptop. It is equipped with a 10th Gen Intel Core H-Series processor and GeForce GTX 1650 GPU so that you can experience fast-paced and smooth gaming. And, with the desktop-style Keyboard setup and integrated backlights, you can indulge in gaming for hours without getting bored.
+          </p>
+
+          <h4 class="description-title">Additional Information :</h4>
+
+          <table class="description-table" border="1px">
+
+            <tr class="table-row">
+              <th class="table-heading" scope="row">Ratings</th>
+
+              <td class="table-data">
+                <div class="rating-wrapper">
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star"></ion-icon>
+                  <ion-icon name="star-half"></ion-icon>
+                  <ion-icon name="star-outline"></ion-icon>
+                </div>
+              </td>
+            </tr>
+
+            <tr class="table-row">
+              <th class="table-heading" scope="row">Model Number</th>
+
+              <td class="table-data">
+                FX506LHB-HN358W</td>
+            </tr>
+
+            <tr class="table-row">
+              <th class="table-heading" scope="row">Model Name</th>
+
+              <td class="table-data">FX506LHB-HN358W</td>
+            </tr>
+
+            <tr class="table-row">
+              <th class="table-heading" scope="row">Color</th>
+
+              <td class="table-data">Black Plastic</td>
+            </tr>
+
+            <tr class="table-row">
+              <th class="table-heading" scope="row"> Type</th>
+
+              <td class="table-data">
+               Gaming Laptop</td>
+            </tr>
+
+          </table>
+
+        </div>
+      </section>
+
+    </article>
+  </main>
+
+
+
+
+
+  <!-- 
+    - #FOOTER
+  -->
+
+  <footer class="footer">
+
+    <div class="footer-top">
+      <div class="container">
+
+        <div class="footer-brand">
+
+          <a href="./index.html" class="logo">Shopi<span class="span">fy</span></a>
+
+          <p class="footer-text">
+            Experience the future today with our premium electronic products.
+          </p>
+
+          <ul class="social-list">
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-facebook"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-twitter"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-skype"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-linkedin"></ion-icon>
+              </a>
+            </li>
+
+          </ul>
+
+        </div>
+
+        <ul class="footer-list">
+
+          <li>
+            <p class="footer-list-title">Company</p>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">About Us</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Shop</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Blog</a>
+          </li>
+
+          <li>
+            <a href="#product" class="footer-link">Product</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Contact Us</a>
+          </li>
+
+        </ul>
+
+        <ul class="footer-list">
+
+          <li>
+            <p class="footer-list-title">Contact</p>
+          </li>
+
+          <li class="footer-item">
+            <div class="contact-icon">
+              <ion-icon name="location-outline"></ion-icon>
+            </div>
+
+            <address class="contact-link">
+              Prakash Tockies, Dhule
+            </address>
+          </li>
+
+          <li class="footer-item">
+            <div class="contact-icon">
+              <ion-icon name="call-outline"></ion-icon>
+            </div>
+
+            <a href="#" class="contact-link">8767461390</a>
+          </li>
+
+          <li class="footer-item">
+            <div class="contact-icon">
+              <ion-icon name="mail-outline"></ion-icon>
+            </div>
+
+            <a href="mailto:organica@help.com" class="contact-link">shopify@help.com</a>
+          </li>
+
+        </ul>
+
+        <div class="footer-list">
+
+          <p class="footer-list-title">Newsletter</p>
+
+          <p class="newsletter-text">
+            You will be notified when somthing new will be appear.
+          </p>
+
+          <form action="" class="footer-form">
+            <input type="email" name="email" placeholder="Email Address *" required class="footer-input">
+
+            <button type="submit" class="footer-form-btn" aria-label="Submit">
+              <ion-icon name="mail-outline"></ion-icon>
+            </button>
+          </form>
+
+        </div>
+
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container">
+
+        <p class="copyright">
+          &copy; 2022 <a href="#" class="copyright-link">Shopify</a>. All Rights Reserved.
+        </p>
+
+        <ul class="footer-bottom-list">
+
+          <li>
+            <a href="#" class="footer-bottom-link">Term and Service</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-bottom-link">Privacy Policy</a>
+          </li>
+
+        </ul>
+
+      </div>
+    </div>
+
+  </footer>
+
+
+
+
+
+  <!-- 
+    - #BACK TO TOP
+  -->
+
+  <a href="#top" class="back-to-top" aria-label="Back to Top" data-back-top-btn>
+    <ion-icon name="arrow-up-outline"></ion-icon>
+  </a>
+
+
+
+
+
+  <!-- 
+    - custom js link
+  -->
+  <script src="../../../assets/js/script.js"></script>
+
+  <!-- 
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
